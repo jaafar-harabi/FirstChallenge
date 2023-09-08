@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./components/Button";
+import Post from "./components/Post";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="pingu">
+        <h1> PinguCoder</h1>
+      </div>
+      <div className=" body-res ">
+        <div >
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+          
+        </div>
+
+        <div className="body-res-1" style={{marginLeft:"250px",marginTop:"20px"}} >
+          <Button/>
+          <Button/>
+          <Button/>
+          <Button/>
+          <Button/>
+          <Button/>
+          
+        </div>
+
+      </div>
+      
+    
+    
     </div>
   );
 }
