@@ -2,11 +2,16 @@ import Button from "./components/Button";
 import Post from "./components/Post";
 
 
-function App() {
+function App() { 
+  const obj = {
+    button1:'Hello',
+    button2:'Pingu',
+    button3:'coder'
+  }
   return (
     <div className="App">
 
-      <div className="pingu">
+      <div className="pingu" style={{height:"70px",paddingTop:"30px"}} >
         <h1> PinguCoder</h1>
       </div>
       <div className=" body-res ">
@@ -19,12 +24,12 @@ function App() {
         </div>
 
         <div className="body-res-1" style={{marginLeft:"250px",marginTop:"20px"}} >
-          <Button/>
-          <Button/>
-          <Button/>
-          <Button/>
-          <Button/>
-          <Button/>
+          <Button obj={obj.button1} />
+          <Button obj={obj.button2}/>
+          <Button obj={obj.button3}/>
+          <Button obj={obj.button1}/>
+          <Button obj={obj.button2}/>
+          <Button obj={obj.button3}/>
           
         </div>
 

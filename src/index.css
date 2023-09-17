@@ -3,23 +3,31 @@ body{
   box-sizing: border-box;
 }
 
+h1{
+  font-size: 18px;
+}
+
 .post{
-  border: 2px solid rgb(58, 58, 221);
+  border: 3px solid #68abfe;
   color: black;
   text-align: center;
   margin: 20px;
+  width: 250px;
 }
 
 .pingu{
   text-align: center;
   padding: 10px;
-  background-color: rgb(67, 67, 224);
+  background-color: #68abfe;
   color: white;
 }
 
 .button{
   color: white;
-  background-color: rgb(59, 59, 228);
+  background-color: #68abfe;
+  border-radius: 20px;
+  border: none;
+  
 }
 
 .body-res{
@@ -34,8 +42,8 @@ body{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  width: 250px;
-  border: 2px solid blue;
-  padding: 20px;
-  height: 70px;
+  width: 300px;
+  border: 3px solid #68abfe;
+  padding: 10px;
+  height: 80px;
 }
