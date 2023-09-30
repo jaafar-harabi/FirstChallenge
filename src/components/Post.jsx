@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Post() {
+function Post({title,description}) {
   return (
     <div className='post'>
-      <h1>This is the post title </h1>
+      <h1> {title} </h1>
       <hr/>
-      <p> this is the post body</p>
+      <p>  {description} </p>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import Button from "./components/Button";
-
+import Post from "./components/Post"
 
 function App() { 
   const obj = {
@@ -16,15 +16,7 @@ function App() {
   ]
 
   const task = myTasks.map((task)=>{
-    return (
-    <>
-    <div style={{border:"3px solid #68abfe",listStyle:"none",height:'100px',width:'250px',textAlign:'center',padding:'10px',margin:'10px'}}>
-            <li key={task.id} style={{fontSize:'24px'}} > {task.title}  </li> <br/>
-            <li key={task.id} style={{fontSize:'16px'}}> {task.description} </li>
-    </div>
-            
-    </> 
-    )
+      return <Post key={task.id} title={task.title} description={task.description} />
   })
   return (
     <div className="App">
